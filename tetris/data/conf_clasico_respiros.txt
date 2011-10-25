@@ -1,0 +1,234 @@
+# -----------------------------------------------------------------------------
+#          Configuración de Tetris para Metodología de la Programación II
+# -----------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------
+# Parámetros relacionados con la dinámica del juego
+# -----------------------------------------------------------------------------
+
+# Semilla de generación de números aleatorios inicial (0=aleatoria)
+0   # Con esto, todas las partidas serán distintas.
+# Tiempo inicial de espera para bajar piezas (milisegundos)
+500 # Se irá cambiando conforme se avanza de nivel
+# Cada cuántas líneas se avanza de nivel
+5   # afecta a la velocidad de bajada de piezas
+# Número de respiros
+5
+# Número de piezas siguientes en cola (mayor que cero)
+4
+
+# -----------------------------------------------------------------------------
+# Parámetros relacionados con la presentación en Pantalla
+# -----------------------------------------------------------------------------
+
+# Configuración de las imágenes que componen las piezas------------------------
+# Número de imágenes
+7
+# Directorio con imágenes
+data/piezas1
+# Ficheros con imágenes (tantas como las indicadas antes)
+rojo.bmp
+verde.bmp
+azul.bmp
+naranja.bmp
+amarillo.bmp
+violeta.bmp
+cyan.bmp
+
+# Posicion y dimensiones del tablero ------------------------------------------
+# Posición en la ventana: Fila, Columna
+0 0
+# Ancho, Alto, marco. El tablero se dibuja centrado
+410 610 5
+# Color de borde y fondo
+0 0 255
+255 255 255
+
+# Posicion y dimensiones de la cola  ------------------------------------------
+# Posición en la ventana: Fila, Columna
+0 410
+# Ancho, Alto, marco
+100 610 5
+# Color de borde y fondo
+255 0 0
+183 246 255
+
+# mensaje del título ----------------------------------------------------------
+Tetris - MP2
+
+# Configuración Visualizador: Título ------------------------------------------
+# Tipo de letra del título, tamaño, estilo
+# Estilo: 0 normal, 1 negrita, 2 italica, 3 negrita-italica
+data/fuentes/Disko.ttf
+25
+0
+# Color letra
+255 0 0
+# Posición en la ventana: Fila, Columna
+0 510
+# Ancho, Alto y marco
+200 100 5
+# Color de borde y fondo
+0 0 255
+0 0 0
+
+
+# Configuración Visualizador: Marcador Nivel  ---------------------------------
+# Tipo de letra de marcadores, tamaño, estilo
+# Estilo: 0 normal, 1 negrita, 2 italica, 3 negrita-italica
+data/fuentes/Astrolyte.ttf
+20
+0
+# Color letra
+255 255 0
+# Posición en la ventana: Fila, Columna
+100 510
+# Ancho, Alto y marco
+200 100 5
+# Color de borde y fondo
+0 0 255
+0 0 0
+
+# Configuración Visualizador: Marcador  Lineas --------------------------------
+# Tipo de letra de marcadores, tamaño, estilo
+# Estilo: 0 normal, 1 negrita, 2 italica, 3 negrita-italica
+data/fuentes/Astrolyte.ttf
+20
+0
+# Color letra
+255 255 0
+# Posición en la ventana: Fila, Columna
+200 510
+# Ancho, Alto y marco
+200 100 5
+# Color de borde y fondo
+0 0 255
+0 0 0
+
+# Configuración Visualizador: Marcador   Piezas -------------------------------
+# Tipo de letra de marcadores, tamaño, estilo
+# Estilo: 0 normal, 1 negrita, 2 italica, 3 negrita-italica
+data/fuentes/Astrolyte.ttf
+20
+0
+# Color letra
+255 255 0
+# Posición en la ventana: Fila, Columna
+300 510
+# Ancho, Alto y marco
+200 100 5
+# Color de borde y fondo
+0 0 255
+0 0 0
+
+# Configuración Visualizador: Respiros ---------------------------------------
+# Tipo de letra de "Game Over", tamaño, estilo
+# Estilo: 0 normal, 1 negrita, 2 italica, 3 negrita-italica
+data/fuentes/Astrolyte.ttf
+20
+0
+# Color letra, borde y fondo en (r,g,b)
+255 255 0
+# Posición en la ventana: Fila, Columna
+400 510
+# Ancho, Alto y marco
+200 100 5
+# Color de borde y fondo
+0 0 255
+0 0 0
+
+
+# Configuración Visualizador: Estado ---------------------------------------
+# Tipo de letra de "Estado", tamaño, estilo
+# Estilo: 0 normal, 1 negrita, 2 italica, 3 negrita-italica
+data/fuentes/DottyShadow.ttf
+25
+0
+# Color letra, borde y fondo en (r,g,b)
+255 0 0
+# Posición en la ventana: Fila, Columna
+500 510
+# Ancho, Alto y marco
+200 100 5
+# Color de borde y fondo
+0 0 255
+0 0 0
+
+# -----------------------------------------------------------------------------
+# Configuración de piezas 
+# -----------------------------------------------------------------------------
+
+# Número de piezas (incluidas repetidas).
+# Se pueden repetir para cambiar probabilidad de aparición
+7
+
+# Pieza 1 (filas columnas) seguidas de matriz indicando imagen (cero es vacío)
+1 4
+7 7 7 7
+
+# Pieza 2 (filas columnas) seguidas de matriz indicando imagen (cero es vacío)
+2 3
+3 0 0
+3 3 3
+
+# Pieza 3 (filas columnas) seguidas de matriz indicando imagen (cero es vacío)
+2 3
+0 0 4
+4 4 4
+
+# Pieza 4 (filas columnas) seguidas de matriz indicando imagen (cero es vacío)
+2 2
+5 5
+5 5
+
+# Pieza 5 (filas columnas) seguidas de matriz indicando imagen (cero es vacío)
+2 3
+0 2 2
+2 2 0
+
+# Pieza 6 (filas columnas) seguidas de matriz indicando imagen (cero es vacío)
+2 3
+0 6 0
+6 6 6
+
+# Pieza 7 (filas columnas) seguidas de matriz indicando imagen (cero es vacío)
+2 3
+1 1 0
+0 1 1
+
+# -----------------------------------------------------------------------------
+# Configuración inicial de tablero
+# -----------------------------------------------------------------------------
+
+# Tablero (filas columnas) seguidas de matriz indicando imagen (cero es vacío)
+30 20
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

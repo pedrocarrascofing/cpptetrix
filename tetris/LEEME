@@ -1,0 +1,8 @@
+Al introducir make en la linea de comandos se generaran 3 ejecutables
+	1.- tetris 		->funciona con la configuracion del archivo data/conf_clasico_basico.txt
+	2.- tetris_resp		->funciona con la configuracion del archivo data/conf_clasico_respiros.txt
+	3.- tetris_resp_lin	->funciona con la configuracion del archivo data/conf_clasico_respiros_lineas.txt
+
+Tras la creacion de los ejecutables los archivos de la carpeta obj son eliminados
+
+

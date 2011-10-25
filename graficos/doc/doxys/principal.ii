@@ -1,0 +1,13 @@
+/** @mainpage Biblioteca básica de gráficos.
+
+@section seccionintro Introducción a la biblioteca
+
+Esta biblioteca se ha creado como una herramienta básica para la asignatura de @e "Metodología de la Programación II" en la @e "E.T.S. Ingeniería Informática y Telecomunicaciones" de la @e "Universidad de Granada".
+
+El objetivo es que los alumnos dispongan de una interfaz simple para dibujar gráficamente, de forma que sea posible manejarla sólo con los conocimientos de la asignatura @e "Metodología de la Programación I".
+
+Lógicamente, se podría haber creado mucho más elaborada, e incluso con una facilidad de uso mayor si se hubieran usados clases para crear la interfaz. Sin embargo, se ha diseñado para que la interfaz sea fácilmente legible para los alumnos sin experiencia.
+
+
+
+*/

@@ -1,0 +1,30 @@
+/** @page refactivadesactiva Activar y desactivar el dibujo
+
+Un programa que necesita crear un ventana y modificar su contenido gráfico puede usar las funciones de activación y desactivación de dibujo para mejorar la velocidad y crear un efecto visual más adecuado.
+
+Para entender su funcionamiento, tengamos en cuenta que cuando creamos una ventana realmente disponemos de dos imágenes que representan el contenido de la ventana:
+
+-# Imagen gráfica, que es la que realmente vemos en la ventana que hemos creado.
+-# Imagen en memoria principal, que es sobre la que realmente dibujamos.
+
+Una función de dibujo realiza básicamente dos pasos:
+
+-# Dibuja sobre la memoria principal.
+-# Actualiza el contenido de la imagen gráfica a partir del contenido en memoria principal.
+
+Básicamente, el problema surge porque el dibujo sobre la ventana gráfica puede ser lento, debido a que cada vez que hacemos una llamada a una primitiva gráfica, la actualización del contenido en la ventana es relativamente lenta. Este problema se agrava aún más en el caso en que tengamos que hacer múltiples llamadas a funciones de dibujo.
+
+Una forma simple para mejorar el comportamiento, y que se ha implementado en esta biblioteca, consiste en dar la posibilidad de desactivar el dibujo, es decir, desactivar la actualización de la imagen gráfica. Así, si queremos hacer múltiples llamadas a funciones de dibujo, podemos realizarlo de la siguiente forma:
+
+-# Desactivamos el dibujo.
+-# Llamamos a las funciones de dibujo.
+-# Activamos el dibujo.
+
+La actualización del contenido gráfico sólo se realiza, para toda la ventana, en el último paso.
+Así, por un lado el contenido de la ventana no se ha modificado mientras que dibujábamos -haciendo que el segundo paso se ejecute de forma más rápida- y por otro,  la actualización se realiza de golpe en toda la ventana de forma que visualmente se percibe un cambio más rápido.
+
+A continuación presentamos un pequeño programa ejemplo en el que se dibujan múltiples círculos, con el dibujo activado y sin activar, para mostrar los tiempos empleados en ambas partes.
+
+@include test_activar.cpp
+
+*/

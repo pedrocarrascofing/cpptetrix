@@ -1,0 +1,28 @@
+Este directorio contiene distintos archivos con los recursos necesarios para
+desarrollar la práctica final "Tetris". Concretamente:
+
+1.- Distintos archivos de configuración. Se han creado distintos alternativas,
+dependiendo de si se han realizado partes opcionales de la práctica. Las
+subcadenas en los nombres de estos archivos indican lo siguiente:
+  a.- clasico: Usa las imágenes que corresponden al aspecto clásico del juego.
+  b.- discos: Usa imágenes que representan un disco volteándose.
+  c.- esferas: Usa imágenes que representan distintos tipos de esferas.
+  d.- planetas: Usa imágenes que representan a distintos planetas.
+  e.- basico: No contiene partes opcionales.
+  f.- lineas: Considera la inclusión de líneas aleatorias (opcional).
+  g.- respiros: Considera la inclusión de "respiros" (opcional).
+  h.- animado: Considera que las imágenes son animadas (opcional).
+
+2.- Distintos conjuntos de imágenes para definir las piezas. Se usan desde los
+archivos de configuración descritos en el punto 1.
+
+3.- Fuentes. Archivos con tipos de letra "True Type". Coinciden con los que
+se han incluido en el módulo de gráficos.
+
+Observe que si desarrolla el programa sin incluir ninguna parte opcional,
+es decir, con el mínimo para superar la parte práctica, el programa podría
+ejecutarse desde el directorio "tetris" (padre de actual), con la
+siguiente línea:
+
+% bin/tetris data/conf_clasico_basico.txt
+
