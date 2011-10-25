@@ -38,13 +38,13 @@ class Matriz
 	  @brief Devuelve el numero de filas de la matriz
 	  @return nº de filas de la matriz
 	*/
-	int FilasMatriz ()const;
+        inline int FilasMatriz()const {return fil;};
 
 	/**
 	  @brief Devuelve el numero de columnas de la matriz
 	  @return nº de columnas de la matriz
 	*/
-	int ColumnasMatriz ()const;  
+        inline int ColumnasMatriz()const {return col;};
 
 	/**
 	  @brief Devuelve un elemento de la matriz
@@ -55,7 +55,7 @@ class Matriz
 
 	  Devuelve el elemento situado en la fila fil, columna col
 	*/
-	int GetMatriz (int fil, int col)const;
+        inline int GetMatriz (int fil, int col)const {return mat[fil][col];};
 
 	/**
 	  @brief Cambia un elemento de la matriz
@@ -66,7 +66,7 @@ class Matriz
 
 	  Modifica el elemento situado en la fila fil, columna col
 	*/
-	void SetMatriz(int fil, int col, int v);        	
+        inline void SetMatriz(int fil, int col, int v){mat[fil][col]=v;};
 
 
 	/**
@@ -96,8 +96,5 @@ class Matriz
 	private:
 	int **mat;
 	int fil, col;
-
-
 };
-
 #endif

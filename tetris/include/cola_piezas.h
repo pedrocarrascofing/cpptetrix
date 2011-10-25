@@ -8,8 +8,6 @@ struct lista_nodo{
 	Pieza elem;
 	};
 
-
-
 class Cola_p
 {
 	public:
@@ -37,7 +35,7 @@ class Cola_p
 	  @brief Comprueba si la cola esta vacia
 	  @return true si la el nº de elementos es mayor que cero, false en otro caso
 	*/
-	bool empty()const;
+        inline bool empty()const {return(num_elem==0);};
 
 	/**
 	  @brief Elimina todos los elementos de la cola
@@ -59,17 +57,14 @@ class Cola_p
 	  @brief Devuelve el tamaño de la cola
 	  @return Tamaño de la cola
 	*/
-	int size()const;
+        inline int size()const {return num_elem;};
 
 	/**
 	  @brief Elimina el primer elemento de la cola
 	*/
 	void pop();
 
-	
-
 	private:
-
 	/**
 	  @brief Devuelve la pieza de la posicion n
 	  @param n posicion de la pieza
@@ -77,12 +72,8 @@ class Cola_p
 	  @pre n>0
 	*/
 	Pieza GetPieza(int n)const;
-
 	friend class Vis_cola;	
-
 	lista_nodo * cab;
 	int num_elem;
 };
-
-
 #endif

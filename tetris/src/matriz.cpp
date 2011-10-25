@@ -35,27 +35,7 @@
 			delete []mat[i];
 		delete []mat;
 	}
-		
-	int Matriz::FilasMatriz ()const
-	{
-		return fil;
-	}
 
-	int Matriz::ColumnasMatriz ()const
-	{
-		return col;
-	}
-	
-	void Matriz::SetMatriz(int fil, int col, int v)
-	{
-		mat[fil][col]=v;
-	}
-
-	int Matriz::GetMatriz (int fil, int col)const
-	{
-		return mat[fil][col];
-	}
-	
 	Matriz Matriz::Traspuesta()const
 	{
 		Matriz aux(col, fil);

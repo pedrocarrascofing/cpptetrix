@@ -3,7 +3,6 @@
 
 class Color{
 	public:
-
 	/**
 	  @brief Operador asignacion
 	*/   	
@@ -11,7 +10,5 @@ class Color{
 
 	unsigned char r, g, b;
 
-	};
-
-
+};
 #endif

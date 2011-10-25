@@ -107,11 +107,6 @@ if(this!= &c)
 	return *this;
 }	
 
-bool Cola_p::empty()const
-{
-	return(num_elem==0);
-}
-
 void Cola_p::clear()
 {
 	if(num_elem!=0)
@@ -163,12 +158,6 @@ void Cola_p::push(const Pieza &p)
 	}
 }
 
-
-int Cola_p::size()const
-{
-	return num_elem;
-}
-
 void Cola_p::pop()
 {
 	lista_nodo *aux;
@@ -179,7 +168,6 @@ void Cola_p::pop()
 	aux->ant=cab;
 	num_elem--;
 }
-
 
 Pieza Cola_p::GetPieza(int n)const
 {

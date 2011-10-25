@@ -2,7 +2,6 @@
 #define __IMAGEN_H__
 #include "graficos.h"
 
-
 class Imagen{
 	public:
 

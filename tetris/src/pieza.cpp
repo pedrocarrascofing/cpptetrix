@@ -1,6 +1,5 @@
 #include "pieza.h"
 
-
 Pieza::Pieza() :pza()
 {}
 
@@ -20,26 +19,6 @@ Pieza& Pieza::operator=(const Pieza &p)
 	return *this;
 }
 
-void Pieza::SetPieza(int i, int j, int n)
-{
-	pza.SetMatriz(i, j, n);
-}
-	
-int Pieza::GetPieza(int i, int j)const 
-{
-	return pza.GetMatriz(i, j);
-} 
-
-int Pieza::Alto()const
-{
-	return (pza.FilasMatriz());
-}
-
-int Pieza::Ancho()const
-{
-	return (pza.ColumnasMatriz());
-}
-
 void Pieza::GiroDer()
 {
 	pza=pza.TrasFil();
@@ -51,5 +30,3 @@ void Pieza::GiroIz()
 	pza=pza.TrasCol();
 	pza=pza.Traspuesta();
 }
-
-	

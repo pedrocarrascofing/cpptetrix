@@ -49,7 +49,7 @@ class Pieza
 	  
 	  Modifica el element de la pieza situado en la posicion i, j 
 	*/
-	void SetPieza(int i, int j, int n);
+        inline void SetPieza(int i, int j, int n){pza.SetMatriz(i, j, n);};
 	
 	/**
 	  @brief Devuelve el elemnto situado en la posicion i, j
@@ -58,19 +58,19 @@ class Pieza
 	  @return elemento situado en la posicion i, j
 	  @pre i>0, j>0
 	*/
-	int GetPieza(int i, int j)const;
+        inline int GetPieza(int i, int j)const{return pza.GetMatriz(i, j);};
 		
 	/**
 	  @brief Devuelve el tamaño en el eje y de la pieza
 	  @return Alto de la pieza 
 	*/
-	int Alto()const;
+        inline int Alto()const{return (pza.FilasMatriz());};
 
 	/**
 	  @brief Devuelve el tamaño en el eje x de la pieza
 	  @return Ancho de la pieza 
 	*/
-	int Ancho()const;
+        int Ancho()const {return (pza.ColumnasMatriz());};
 
 	/**
 	  @brief Gira la pieza a la derecha
@@ -88,8 +88,5 @@ class Pieza
 
 	private:
 	Matriz pza;
-
 };
-
-
 #endif
